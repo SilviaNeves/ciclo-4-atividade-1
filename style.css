@@ -1,0 +1,80 @@
+header {
+    background-color: #97cf77;
+    text-decoration-line: underline;
+    text-align: center;
+    color: #056c5e;
+    border: #002722 ridge 30px;
+    font-family: fantasy;
+    font-size:xx-large;
+    
+}
+body {
+    background-color: #97cf77;
+    font-family: Arial, sans-serif;
+    text-align: center;  
+    color: #002722;  
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.character-card {
+    background-color: #dee5d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(4, 208, 62, 0.1);
+    border: #056c5e groove 10px; 
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    transition: transform .2s; /* Animação suave */
+    margin: 0 auto;
+}
+.character-card:hover:hover {
+    flex-direction: column-reverse;
+    background-color: rgb(251, 255, 0);
+    transform: rotate(360deg) scale(1.2); /* Aumenta o tamanho do card em 10% */
+}
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: #056c5e double 3px;
+}
+
+.character-card h2 {
+    margin: 10px 0;
+    text-decoration:overline;
+    color:#056c5e;
+}
+.character-card p {
+    color: #34d2bd;
+    margin: 10px 0;
+}
+
+button {
+    text-decoration: underline;
+    background-color: #97cf77;
+    border: none;
+    font-size: larger;
+    transition: background-color 0.5s ;
+}
+button:hover {
+    background-color:#97cf77;
+    color: #97cf77;
+    transform: scale(1.2)
+}
+footer {
+    background-color: #97cf77;
+    text-decoration-line: underline;
+    text-align: center;
+    color: #056c5e;
+    border: #002722 ridge 10px;
+    font-family: fantasy;
+}
